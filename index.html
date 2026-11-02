@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Nova Esports | Free Fire Free Daily Tournament</title>
+<style>
+:root{--gold:#f2b81f;--gold2:#ffe08a;--card:#0d0d0d;--line:#5a4510;--txt:#f5f1e4;--mut:#b2aa94;--red:#e0161e;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--txt);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:radial-gradient(ellipse 60% 40% at 8% 12%,rgba(255,130,30,.38),transparent 70%),radial-gradient(ellipse 60% 40% at 92% 18%,rgba(140,80,230,.38),transparent 70%),#000}
+.wrap{max-width:1000px;margin:0 auto;padding:0 18px}
+header{border-bottom:1px solid var(--line);background:rgba(0,0,0,.6)}
+.bar{display:flex;align-items:center;gap:14px;padding:12px 18px;max-width:1000px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:9px;font:900 italic 22px "Arial Black",Impact,sans-serif;color:var(--txt);text-decoration:none}
+.brand small{display:block;font:600 10px system-ui;letter-spacing:.35em;color:var(--gold)}
+nav{display:flex;gap:6px;overflow-x:auto;order:3;width:100%;padding-bottom:2px}
+nav a{white-space:nowrap;color:var(--txt);text-decoration:none;padding:8px 14px;border-radius:8px;font-size:14px;border:1px solid transparent}
+nav a:hover,nav a:focus-visible{border-color:var(--gold);color:var(--gold2);outline:none}
+.reg{margin-left:auto;border:1.5px solid var(--gold);color:var(--gold2);padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:600;font-size:14px}
+@media(min-width:760px){nav{order:0;width:auto;flex:1;justify-content:center}}
+.hero{text-align:center;padding:34px 0 10px}
+.kick{letter-spacing:.3em;font-weight:600;font-size:14px}
+.kick::before,.kick::after{content:"";display:inline-block;width:40px;height:2px;background:var(--gold);vertical-align:middle;margin:0 12px}
+h1{margin:10px 0 0;font:900 italic clamp(44px,12vw,104px)/.95 "Arial Black",Impact,sans-serif;text-transform:uppercase;background:linear-gradient(#fff,#d9d4c4 55%,#9c9686);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 0 #000) drop-shadow(0 0 18px rgba(242,184,31,.35))}
+.ribbon{display:inline-block;margin:14px 0 22px;padding:8px 34px;background:linear-gradient(90deg,#c98d00,var(--gold),#c98d00);color:#000;font:900 italic clamp(14px,3.6vw,22px) "Arial Black",Impact,sans-serif;transform:skewX(-12deg)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:760px;margin:0 auto}
+.stat{background:var(--card);border:1.5px solid var(--gold);border-radius:12px;padding:12px 6px;box-shadow:0 0 18px rgba(242,184,31,.25)}
+.stat span{display:block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.stat b{display:block;font:900 italic clamp(24px,7vw,44px)/1.1 "Arial Black",Impact,sans-serif;color:var(--gold)}
+.stat em{font-style:normal;font-size:11px;color:var(--mut)}
+.timer{max-width:760px;margin:16px auto 0;background:var(--card);border:1.5px solid var(--gold);border-radius:14px;padding:16px 10px;box-shadow:0 0 22px rgba(242,184,31,.25)}
+.timer>span{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:14px}
+#cd{display:flex;justify-content:center;gap:10px;margin:8px 0 2px}
+#cd div{min-width:68px}
+#cd b{display:block;font:900 italic clamp(40px,13vw,72px)/1 "Arial Black",Impact,sans-serif;color:var(--gold)}
+#cd i{font-style:normal;font-size:11px;letter-spacing:.2em;color:var(--mut)}
+.cta{display:inline-block;margin:18px 0 12px;padding:16px 46px;border-radius:14px;border:2px solid #ff6a6f;background:linear-gradient(#f2323a,#a80c13);color:#fff;font:900 italic clamp(20px,5vw,30px) "Arial Black",Impact,sans-serif;text-decoration:none;box-shadow:0 0 26px rgba(224,22,30,.55)}
+.tag{display:inline-block;padding:7px 22px;background:linear-gradient(90deg,transparent,#f3d9a0,transparent);color:#000;font-weight:700;font-size:14px}
+.feat{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:26px 0 8px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+@media(min-width:760px){.feat{grid-template-columns:repeat(4,1fr)}}
+.feat div{display:flex;gap:10px;align-items:center;font-weight:700;font-size:13px;text-transform:uppercase;text-align:left}
+.feat i{flex:none;width:38px;height:38px;border:2px solid var(--gold);border-radius:10px;display:grid;place-items:center;color:var(--gold);font-style:normal;font-size:18px}
+section{padding:34px 0 0}
+h2{font:900 italic 28px/1.1 "Arial Black",Impact,sans-serif;color:var(--gold);margin:0 0 14px;text-transform:uppercase}
+p{color:var(--mut);margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.two{display:grid;gap:14px}
+@media(min-width:760px){.two{grid-template-columns:1fr 1fr}}
+.grid{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin:6px 0 10px}
+.seat{aspect-ratio:1;border-radius:5px;border:1.5px solid var(--gold)}
+.seat.full{background:var(--gold)}
+ul{margin:0;padding-left:20px;color:var(--mut)}li{margin-bottom:7px}
+table{width:100%;border-collapse:collapse;color:var(--mut)}th,td{padding:10px 8px;border-bottom:1px solid #2a2310;text-align:left}th{color:var(--gold)}
+label{display:block;margin:14px 0 5px;font-size:14px}
+input,select{width:100%;padding:13px;border-radius:10px;border:1px solid var(--line);background:#111;color:var(--txt);font:inherit}
+input:focus,select:focus,.cta:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.btn{display:block;width:100%;text-align:center;padding:15px;border-radius:12px;border:0;background:var(--gold);color:#000;font:700 17px system-ui;text-decoration:none;cursor:pointer;margin-top:14px}
+.btn.alt{background:transparent;color:var(--gold);border:1.5px solid var(--gold)}
+#msg{margin-top:12px;color:#ff8a7a;font-size:14px;min-height:20px}
+#out{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:50;padding:20px;overflow:auto}
+#out .card{max-width:520px;margin:30px auto}
+#out pre{white-space:pre-wrap;word-break:break-word;color:var(--txt);font:14px/1.5 ui-monospace,Menlo,monospace;margin:0 0 6px}
+footer{margin:40px 0 20px;font-size:12px;color:var(--mut);text-align:center}
+.card:has(table){padding:8px 12px;overflow-x:auto}tbody td:nth-child(2){font-weight:700;color:var(--txt);letter-spacing:.03em}tbody td:nth-child(n+3){font-weight:700}tbody td:last-child{color:var(--gold2)}.r1,.r2,.r3{background:linear-gradient(90deg,rgba(242,184,31,.18),transparent)}.r1 td{color:var(--gold2)!important}
+.notice{max-width:760px;margin:16px auto 0;padding:12px 14px;border:1.5px solid #ff6a6f;border-radius:12px;background:rgba(224,22,30,.15);color:var(--txt);font-size:14px}.notice b{color:#ff8a8f;letter-spacing:.05em}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="brand" href="#home"><svg width="40" height="40" viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="#000" stroke="#f2b81f" stroke-width="20"/><path d="M150 360V112h46l120 158V112h46v248h-46L196 202v158z" fill="#f2b81f"/><path d="M376 62l14 42 42 14-42 14-14 42-14-42-42-14 42-14z" fill="#ffe08a" stroke="#000" stroke-width="8" stroke-linejoin="round"/></svg><span>NOVA<small>ESPORTS</small></span></a>
+<nav aria-label="Menu"><a href="#home">Home</a><a href="#tournament">Tournament</a><a href="#rules">Rules</a><a href="#leaderboard">Leaderboard</a><a href="#contact">Contact</a></nav>
+<a class="reg" href="#join">Join Free</a>
+</div></header>
+
+<main class="wrap" id="home">
+<div class="hero">
+<div class="kick">NOVA ESPORTS</div>
+<h1>Free<br>Tournament</h1>
+<div class="ribbon">DAILY BATTLE ROYALE | SOLO</div>
+<div class="stats">
+<div class="stat"><span>Entry fee</span><b>FREE</b></div>
+<div class="stat"><span>Player slots</span><b>48</b><em>(Solo)</em></div>
+<div class="stat"><span>Match</span><b>Daily</b><em id="at"></em></div>
+</div>
+<div class="notice" role="status"><b>⚠ TOURNAMENT TIMING UPDATE</b><br>Tournament aaj (Monday, 2 Nov) raat 8:00 PM IST ko hoga. Registered players ko WhatsApp par update milega.</div>
+<div class="timer"><span id="cdLbl">Next free tournament starts in</span><div id="cd"><div><b id="cdH">00</b><i>HRS</i></div><div><b id="cdM">00</b><i>MIN</i></div><div><b id="cdS">00</b><i>SEC</i></div></div></div>
+<a class="cta" href="#join">JOIN FREE »</a><br>
+<span class="tag">FOR FREE FIRE PLAYERS IN INDIA</span>
+</div>
+<div class="feat">
+<div><i>✓</i>Fair play<br>No hack</div>
+<div><i>⚡</i>Live<br>updates</div>
+<div><i>◉</i>Live on YouTube<br>and Facebook</div>
+<div><i>♛</i>Daily<br>champion</div>
+</div>
+
+<section id="tournament">
+<h2>Tournament</h2>
+<div class="two">
+<div class="card">
+<p>Free Fire India, Solo, one lobby, every day. No entry fee, no payment needed. Streamed live on YouTube and Facebook.</p>
+<p><b style="color:var(--gold2)">Rewards:</b></p>
+<ul>
+<li>Nova Champion title for the daily winner</li>
+<li>Shoutout on the live stream</li>
+<li>Top 3 poster on our social pages</li>
+<li>Sponsor prizes, announced when available</li>
+</ul>
+</div>
+<div class="card">
+<p id="slotTxt"></p>
+<div class="grid" id="grid" aria-label="Slots"></div>
+<p>Slots are confirmed on WhatsApp. Room ID and password are sent 10 minutes before the match.</p>
+</div>
+</div>
+</section>
+
+<section id="rules">
+<h2>Rules</h2>
+<div class="card"><ul>
+<li>Solo match, Free Fire India, Battle Royale</li>
+<li>Hacks, emulators or teaming mean disqualification</li>
+<li>Join the room within 5 minutes of getting the room ID, or your slot is given away</li>
+<li>If a match is cancelled, it is rescheduled and announced on WhatsApp</li>
+<li>Points: placement + kills. The organizer's decision is final</li>
+</ul></div>
+</section>
+
+<section id="leaderboard">
+<h2>Leaderboard</h2>
+<div class="card"><table><thead><tr><th>#</th><th>Player</th><th>Kills</th><th>Points</th></tr></thead>
+<tbody><tr class="r1"><td>🥇</td><td>NOVA_AARAV ♛</td><td>18</td><td>320</td></tr><tr class="r2"><td>🥈</td><td>RDX_VIKAS</td><td>16</td><td>288</td></tr><tr class="r3"><td>🥉</td><td>FF_KRISH</td><td>14</td><td>260</td></tr><tr class="r4"><td>4</td><td>BADGE_LIVE</td><td>12</td><td>236</td></tr><tr class="r5"><td>5</td><td>NOTY_SAM</td><td>11</td><td>220</td></tr><tr class="r6"><td>6</td><td>AGENT_RAJ</td><td>10</td><td>206</td></tr><tr class="r7"><td>7</td><td>NXG_DEV</td><td>9</td><td>190</td></tr><tr class="r8"><td>8</td><td>TEAM_ISHU</td><td>9</td><td>188</td></tr><tr class="r9"><td>9</td><td>ZENIX_OM</td><td>8</td><td>172</td></tr><tr class="r10"><td>10</td><td>FIRE_KUNAL</td><td>7</td><td>160</td></tr></tbody></table></div>
+<p style="margin-top:10px;font-size:13px">Points: placement + kills. Leaderboard is updated after each match.</p>
+</section>
+
+<section id="join">
+<h2>Join Free</h2>
+<div class="card">
+<label for="name">Full name</label><input id="name" autocomplete="name">
+<label for="uid">Free Fire UID</label><input id="uid" inputmode="numeric">
+<label for="ign">In-game name</label><input id="ign">
+<label for="num">Your WhatsApp number</label><input id="num" inputmode="tel" autocomplete="tel">
+<label for="age">Age</label>
+<select id="age"><option value="">Select</option><option>18 or older</option><option>Under 18</option></select>
+<div id="msg" role="alert"></div>
+<button class="btn" id="send" type="button">Join on WhatsApp</button>
+<p style="margin-top:10px;font-size:13px">WhatsApp will open with your details. Send the message to complete your registration. It is free.</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card"><p>Questions? Message us or follow us.</p>
+<a class="btn" id="wa" href="#" target="_blank" rel="noopener">Message us on WhatsApp</a>
+<a class="btn alt" href="https://www.youtube.com/@NovaEsportsFF07" target="_blank" rel="noopener">Watch us live on YouTube: @NovaEsportsFF07</a>
+<a class="btn alt" href="https://www.instagram.com/nova_esports07" target="_blank" rel="noopener">Follow us on Instagram: @nova_esports07</a>
+<a class="btn alt" href="https://www.facebook.com/share/1H7sFfinFJ/" target="_blank" rel="noopener">Follow us on Facebook: Nova Esports</a></div>
+</section>
+
+<div id="out" role="dialog" aria-label="Your registration message"><div class="card"><p style="color:var(--gold2);font-weight:700">Almost done! Send this message to Nova Esports on WhatsApp:</p><pre id="outTxt"></pre><a class="btn" id="outLink" href="#" target="_blank" rel="noopener">Open WhatsApp</a><button class="btn alt" id="outCopy" type="button">Copy message</button><p style="margin-top:12px;font-size:13px">If WhatsApp does not open, tap Copy message, then paste it in a chat with 9911811998 and send.</p><button class="btn alt" id="outClose" type="button">Close</button></div></div>
+
+<footer>© Nova Esports. Free Fire is a trademark of Garena. We are not affiliated with or sponsored by Garena.</footer>
+</main>
+
+<script>
+/* Edit these details */
+var CFG={wa:"919911811998",freeH:20,freeM:0,filled:2,total:48,next:[2026,11,2]};
+var $=function(i){return document.getElementById(i)};
+function pad(n){return(n<10?"0":"")+n}
+$("wa").href="https://wa.me/"+CFG.wa;
+var h12=CFG.freeH%12||12;
+$("at").textContent=h12+":"+pad(CFG.freeM)+" "+(CFG.freeH<12?"AM":"PM")+" IST";
+var g=$("grid");
+for(var i=0;i<CFG.total;i++){var s=document.createElement("div");s.className="seat"+(i<CFG.filled?" full":"");g.appendChild(s)}
+$("slotTxt").textContent=(CFG.total-CFG.filled)+" of "+CFG.total+" free slots open";
+function tick(){
+  var now=Date.now(),d=new Date(now+19800000),t=Date.UTC(d.getUTCFullYear(),d.getUTCMonth(),d.getUTCDate(),CFG.freeH,CFG.freeM)-19800000;
+  if(CFG.next){var nt=Date.UTC(CFG.next[0],CFG.next[1]-1,CFG.next[2],CFG.freeH,CFG.freeM)-19800000;if(now<nt){$("cd").style.display="flex";$("cdLbl").textContent="Next free tournament starts in";var q=Math.floor((nt-now)/1000);$("cdH").textContent=pad(Math.floor(q/3600));$("cdM").textContent=pad(Math.floor(q%3600/60));$("cdS").textContent=pad(q%60);return}}
+  if(now>=t&&now<t+3600000){$("cdLbl").textContent="LIVE NOW";$("cd").style.display="none";return}
+  $("cd").style.display="flex";$("cdLbl").textContent="Next free tournament starts in";
+  if(now>=t+3600000)t+=86400000;
+  var s=Math.floor((t-now)/1000);
+  $("cdH").textContent=pad(Math.floor(s/3600));$("cdM").textContent=pad(Math.floor(s%3600/60));$("cdS").textContent=pad(s%60);
+}
+tick();setInterval(tick,1000);
+function go(t){
+  $("outTxt").textContent=t;
+  $("outLink").href="https://wa.me/"+CFG.wa+"?text="+encodeURIComponent(t);
+  $("out").style.display="block";
+}
+$("outClose").onclick=function(){$("out").style.display="none"};
+$("outCopy").onclick=function(){var b=this;if(navigator.clipboard){navigator.clipboard.writeText($("outTxt").textContent).then(function(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy message"},1800)},function(){})}};
+$("send").onclick=function(){
+  var v=function(i){return $(i).value.trim()};
+  var m=$("msg");m.textContent="";
+  if(!v("name")||!v("uid")||!v("ign")||!v("num")||!v("age")){m.textContent="Please fill in all fields.";return}
+  if(!/^\d{8,12}$/.test(v("uid"))){m.textContent="Free Fire UID must be 8 to 12 digits.";return}
+  if(v("num").replace(/\D/g,"").slice(-10).length<10){m.textContent="Enter a valid 10-digit WhatsApp number.";return}
+  go("Nova Esports FREE Daily Registration\nName: "+v("name")+"\nUID: "+v("uid")+"\nIn-game name: "+v("ign")+"\nWhatsApp: "+v("num")+"\nAge: "+v("age"));
+};
+</script>
+</body>
+</html>
