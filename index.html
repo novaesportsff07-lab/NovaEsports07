@@ -141,7 +141,7 @@ footer{margin:40px 0 20px;font-size:12px;color:var(--mut);text-align:center}
 <label for="name">Full name</label><input id="name" autocomplete="name">
 <label for="uid">Free Fire UID</label><input id="uid" inputmode="numeric">
 <label for="ign">In-game name</label><input id="ign">
-<label for="num">Your Telegram username or number</label><input id="num" autocomplete="off" placeholder="@username ya 10-digit number">
+
 <label for="age">Age</label>
 <select id="age"><option value="">Select</option><option>18 or older</option><option>Under 18</option></select>
 <div id="msg" role="alert"></div>
@@ -195,10 +195,9 @@ $("outCopy").onclick=function(){var b=this;if(navigator.clipboard){navigator.cli
 $("send").onclick=function(){
   var v=function(i){return $(i).value.trim()};
   var m=$("msg");m.textContent="";
-  if(!v("name")||!v("uid")||!v("ign")||!v("num")||!v("age")){m.textContent="Please fill in all fields.";return}
+  if(!v("name")||!v("uid")||!v("ign")||!v("age")){m.textContent="Please fill in all fields.";return}
   if(!/^\d{8,12}$/.test(v("uid"))){m.textContent="Free Fire UID must be 8 to 12 digits.";return}
-  if(v("num").length<5){m.textContent="Enter your Telegram username or number.";return}
-  go("Nova Esports FREE Daily Registration\nName: "+v("name")+"\nUID: "+v("uid")+"\nIn-game name: "+v("ign")+"\nTelegram: "+v("num")+"\nAge: "+v("age"));
+  go("Nova Esports FREE Daily Registration\nName: "+v("name")+"\nUID: "+v("uid")+"\nIn-game name: "+v("ign")+"\nAge: "+v("age"));
 };
 </script>
 </body>
