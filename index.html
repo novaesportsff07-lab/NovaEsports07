@@ -97,7 +97,7 @@ footer{margin:40px 0 20px;font-size:12px;color:var(--mut);text-align:center}
 <header><div class="bar">
 <a class="brand" href="#home"><svg width="40" height="40" viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="#000" stroke="#f2b81f" stroke-width="20"/><path d="M150 360V112h46l120 158V112h46v248h-46L196 202v158z" fill="#f2b81f"/><path d="M376 62l14 42 42 14-42 14-14 42-14-42-42-14 42-14z" fill="#ffe08a" stroke="#000" stroke-width="8" stroke-linejoin="round"/></svg><span>NOVA<small>ESPORTS</small></span></a>
 <nav aria-label="Menu"><a href="#home">Home</a><a href="#tournament">Tournament</a><a href="#live">Live</a><a href="#rules">Rules</a><a href="#leaderboard">Leaderboard</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
-<a class="reg" href="#join">Join Free</a>
+<a class="reg" href="https://t.me/novasports07" target="_blank" rel="noopener">Join Free</a>
 </div></header>
 
 <main class="wrap" id="home">
@@ -111,7 +111,7 @@ footer{margin:40px 0 20px;font-size:12px;color:var(--mut);text-align:center}
 <div class="stat"><span>Match</span><b>Weekend</b><em id="at"></em></div>
 </div>
 <div class="wk"><span>Weekend Free Tournament</span><small id="wAt"></small><div id="wcd"><div><b id="wH">00</b><i>HRS</i></div><div><b id="wM">00</b><i>MIN</i></div><div><b id="wS">00</b><i>SEC</i></div></div></div>
-<a class="cta" href="#join">JOIN FREE »</a><br>
+<a class="cta" href="https://t.me/novasports07" target="_blank" rel="noopener">JOIN FREE »</a><br>
 <span class="tag">FOR FREE FIRE PLAYERS IN INDIA</span>
 </div>
 <div class="feat">
@@ -152,9 +152,9 @@ footer{margin:40px 0 20px;font-size:12px;color:var(--mut);text-align:center}
 
 <section id="paid">
 <h2>Free and Paid Tournaments</h2>
-<div class="card"><p><b style="color:var(--gold2)">Free Tournament</b><br>Every Saturday and Sunday. No entry fee. Subscribe on YouTube and follow on Facebook to register.</p></div>
+<div class="card"><p><b style="color:var(--gold2)">Free Tournament</b><br>Every Saturday and Sunday. No entry fee. Join our Telegram group to register.</p></div>
 <div class="card pcard"><p><b class="t">Paid Tournament</b><br><span id="pInfo"></span></p>
-<a class="btn alt" id="pJoin" href="#join" style="margin-top:10px">Join Paid Tournament</a></div>
+<a class="btn alt" id="pJoin" href="https://t.me/novasports07" target="_blank" rel="noopener" style="margin-top:10px">Join Paid Tournament</a></div>
 </section>
 
 <section id="live">
@@ -189,7 +189,7 @@ footer{margin:40px 0 20px;font-size:12px;color:var(--mut);text-align:center}
 <details><summary>When do I get the Room ID?</summary><p>On Telegram, 10 minutes before the match. Join within 5 minutes or your slot is given away.</p></details>
 <details><summary>Can I play on emulator?</summary><p>No. Emulators, hacks and teaming mean disqualification.</p></details>
 <details><summary>Can players under 18 join?</summary><p>Yes, with a parent or guardian’s permission.</p></details>
-<details><summary>Is my slot confirmed after I register?</summary><p>Your slot is confirmed when we reply on Telegram. Send your registration message from the Join Free form.</p></details>
+<details><summary>Is my slot confirmed after I register?</summary><p>Your slot is confirmed when we reply on Telegram. Join our Telegram group and send your Free Fire UID and in-game name there.</p></details>
 <details><summary>What if the match is cancelled?</summary><p>It is rescheduled and announced on Telegram.</p></details>
 <details><summary>How are points counted?</summary><p>Placement points plus kills. The organizer’s decision is final.</p></details>
 </div>
@@ -207,27 +207,9 @@ footer{margin:40px 0 20px;font-size:12px;color:var(--mut);text-align:center}
 <li>Agree to the rules: no hacks, no teaming</li>
 </ul>
 </div>
-<div class="card"><p><b style="color:var(--gold2)">Choose your tournament</b></p>
-<div class="tp"><button type="button" id="tFree" class="on">Free</button><button type="button" id="tPaid">Paid</button></div></div>
-<div class="card" id="follow">
-<p><b style="color:var(--gold2)">Step 1: Subscribe and follow (compulsory)</b></p>
-<p style="font-size:14px;margin:6px 0 0">Tap both buttons, subscribe or follow, then come back here. The form opens after that.</p>
-<div class="step"><a class="btn alt" id="fYt" href="https://www.youtube.com/@NovaEsportsFF07?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a><b id="cYt">○</b></div>
-<div class="step"><a class="btn alt" id="fFb" href="https://www.facebook.com/share/1H7sFfinFJ/" target="_blank" rel="noopener">Follow on Facebook</a><b id="cFb">○</b></div>
-<p id="fMsg" style="font-size:13px;margin-top:10px;color:var(--mut)">Step 2 is locked until both are done.</p>
-</div>
-<div class="card lock" id="formBox">
-<label for="name">Full name</label><input id="name" autocomplete="name">
-<label for="uid">Free Fire UID</label><input id="uid" inputmode="numeric">
-<label for="ign">In-game name</label><input id="ign">
-<label for="age">Age</label>
-<select id="age"><option value="">Select</option><option>18 or older</option><option>Under 18</option></select>
-<label class="chk"><input type="checkbox" id="ok">I agree to the rules. If I am under 18, my parent or guardian knows I am playing.</label>
-<div id="msg" role="alert"></div>
-<p id="ssNote" style="font-size:13px;margin-top:12px">After you send the message on Telegram, also send a screenshot showing you subscribed on YouTube and followed on Facebook. Registrations without it are not confirmed.</p>
-<button class="btn" id="send" type="button">Join on Telegram</button>
-<p style="margin-top:10px;font-size:13px">Your details will be ready to copy. Send them on Telegram, and Nova Esports will confirm your slot there.</p>
-</div>
+<div class="card"><p><b style="color:var(--gold2)">How to join</b></p>
+<p style="font-size:14px">No form and no subscribe needed. Tap the button, join our Telegram group, then send your <b style="color:var(--txt)">Free Fire UID</b> and <b style="color:var(--txt)">in-game name</b> in the group. We confirm your slot there.</p>
+<a class="btn" id="joinTg" href="https://t.me/novasports07" target="_blank" rel="noopener">Join on Telegram</a></div>
 </section>
 
 <section id="contact">
@@ -239,7 +221,6 @@ footer{margin:40px 0 20px;font-size:12px;color:var(--mut);text-align:center}
 <a class="btn alt" href="https://www.facebook.com/share/1H7sFfinFJ/" target="_blank" rel="noopener">Follow us on Facebook: Nova Esports</a></div>
 </section>
 
-<div id="out" role="dialog" aria-label="Your registration message"><div class="card"><p style="color:var(--gold2);font-weight:700">Almost done! Copy this message and send it to Nova Esports on Telegram:</p><pre id="outTxt"></pre><button class="btn" id="outCopy" type="button">Copy message</button><a class="btn alt" id="outLink" href="#" target="_blank" rel="noopener">Open Telegram</a><p style="margin-top:12px;font-size:13px">Tap Copy message first, then open Telegram and send it as the admin tells you there.</p><button class="btn alt" id="outClose" type="button">Close</button></div></div>
 
 <footer>© Nova Esports. Free Fire is a trademark of Garena. We are not affiliated with or sponsored by Garena.</footer>
 </main>
@@ -304,64 +285,26 @@ wtick();setInterval(wtick,1000);
     $("winInfo").textContent=(w.kills!=null?w.kills+" kills":"")+(w.date?" · "+w.date:"")}
 })();
 
-/* Follow gate */
-var gate={yt:false,fb:false};
-try{var gs=JSON.parse(localStorage.getItem("nova_gate"));if(gs){gate.yt=!!gs.yt;gate.fb=!!gs.fb}}catch(e){}
 var type="free";
-function gateUI(){
-  $("cYt").textContent=gate.yt?"✓":"○";$("cYt").className=gate.yt?"on":"";
-  $("cFb").textContent=gate.fb?"✓":"○";$("cFb").className=gate.fb?"on":"";
-  var ok=type=="paid"||(gate.yt&&gate.fb);
-  $("follow").style.display=type=="paid"?"none":"block";
-  $("formBox").className=ok?"card":"card lock";
-  $("fMsg").textContent=(gate.yt&&gate.fb)?"Step 2: fill in the form below.":"Step 2 is locked until both are done.";
-  $("tFree").className=type=="free"?"on":"";$("tPaid").className=type=="paid"?"on":"";
-  $("ssNote").style.display=type=="paid"?"none":"block";
-  $("send").textContent=type=="paid"?"Join Paid on Telegram":"Join on Telegram";
-}
-function gateSet(k){return function(){setTimeout(function(){gate[k]=true;try{localStorage.setItem("nova_gate",JSON.stringify(gate))}catch(e){}gateUI()},1500)}}
-$("fYt").onclick=gateSet("yt");$("fFb").onclick=gateSet("fb");
-$("tFree").onclick=function(){type="free";gateUI()};$("tPaid").onclick=function(){type="paid";gateUI()};
-$("pJoin").onclick=function(){type="paid";gateUI()};
 (function(){var P=CFG.paid||{},t=[];
   t.push(P.fee?"Entry fee: "+P.fee+".":"Entry fee: shared on Telegram after you register.");
   if(P.prize)t.push("Prize: "+P.prize+".");
   if(P.time)t.push("Time: "+P.time+".");
   t.push("Your slot is confirmed by Nova Esports on Telegram.");
   $("pInfo").textContent=t.join(" ")})();
-gateUI();
 
 /* Compulsory first question */
 (function(){
   var saved=null;try{saved=localStorage.getItem("nova_choice")}catch(e){}
   function pick(t,remember){type=t;if(remember){try{localStorage.setItem("nova_choice",t)}catch(e){}}
-    $("ask").style.display="none";document.body.style.overflow="";gateUI();
+    $("ask").style.display="none";document.body.style.overflow="";
     if(remember&&t=="paid"){var el=$("paid");if(el)el.scrollIntoView()}}
-  if(saved=="free"||saved=="paid"){type=saved;gateUI();return}
+  if(saved=="free"||saved=="paid"){type=saved;return}
   $("ask").style.display="flex";document.body.style.overflow="hidden";
   $("aFree").onclick=function(){pick("free",true)};
   $("aPaid").onclick=function(){pick("paid",true)};
 })();
 
-/* Registration */
-function go(t){
-  $("outTxt").textContent=t;
-  $("outLink").href=CFG.tg;
-  $("out").style.display="block";
-}
-$("outClose").onclick=function(){$("out").style.display="none"};
-$("outCopy").onclick=function(){var b=this;if(navigator.clipboard){navigator.clipboard.writeText($("outTxt").textContent).then(function(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy message"},1800)},function(){})}};
-$("send").onclick=function(){
-  var v=function(i){return $(i).value.trim()};
-  var m=$("msg");m.textContent="";
-  if(type=="free"&&!(gate.yt&&gate.fb)){m.textContent="Please subscribe on YouTube and follow on Facebook first.";return}
-  if(!v("name")||!v("uid")||!v("ign")||!v("age")){m.textContent="Please fill in all fields.";return}
-  if(!/^\d{8,12}$/.test(v("uid"))){m.textContent="Free Fire UID must be 8 to 12 digits.";return}
-  if(!$("ok").checked){m.textContent="Please accept the rules.";return}
-  go(type=="paid"
-    ?"Nova Esports PAID Tournament Registration\nName: "+v("name")+"\nUID: "+v("uid")+"\nIn-game name: "+v("ign")+"\nAge: "+v("age")+"\nPlease share the entry fee details."
-    :"Nova Esports FREE Weekend Registration\nName: "+v("name")+"\nUID: "+v("uid")+"\nIn-game name: "+v("ign")+"\nAge: "+v("age")+"\nYouTube subscribed: Yes\nFacebook followed: Yes\n(Screenshots attached)");
-};
 </script>
 </body>
 </html>
