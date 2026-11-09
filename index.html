@@ -142,14 +142,6 @@ footer{margin:40px 0 20px;font-size:12px;color:var(--mut);text-align:center}
 </div>
 </section>
 
-<div id="ask" role="dialog" aria-modal="true" aria-labelledby="askT"><div class="box">
-<h3 id="askT">Welcome to Nova Esports</h3>
-<p>Quick question first: which tournament are you interested in?</p>
-<button class="btn" id="aFree" type="button">Free Tournament</button>
-<button class="btn alt" id="aPaid" type="button">Paid Tournament</button>
-<p style="margin:14px 0 0;font-size:12px">You need to choose one to continue. You can change it later in Join section.</p>
-</div></div>
-
 <section id="paid">
 <h2>Free and Paid Tournaments</h2>
 <div class="card"><p><b style="color:var(--gold2)">Free Tournament</b><br>Every Saturday and Sunday. No entry fee. Join our Telegram group to register.</p></div>
@@ -292,18 +284,6 @@ var type="free";
   if(P.time)t.push("Time: "+P.time+".");
   t.push("Your slot is confirmed by Nova Esports on Telegram.");
   $("pInfo").textContent=t.join(" ")})();
-
-/* Compulsory first question */
-(function(){
-  var saved=null;try{saved=localStorage.getItem("nova_choice")}catch(e){}
-  function pick(t,remember){type=t;if(remember){try{localStorage.setItem("nova_choice",t)}catch(e){}}
-    $("ask").style.display="none";document.body.style.overflow="";
-    if(remember&&t=="paid"){var el=$("paid");if(el)el.scrollIntoView()}}
-  if(saved=="free"||saved=="paid"){type=saved;return}
-  $("ask").style.display="flex";document.body.style.overflow="hidden";
-  $("aFree").onclick=function(){pick("free",true)};
-  $("aPaid").onclick=function(){pick("paid",true)};
-})();
 
 </script>
 </body>
