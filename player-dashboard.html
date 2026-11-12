@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050505"><title>NOVA ESPORTS | Player Dashboard</title>
+<style>
+:root{--gold:#f2b81f;--gold2:#ffe08a;--card:#101014;--muted:#aaa}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% 0%,#392006,transparent 35%),#050505;color:#fff;font:15px system-ui;padding:18px}.wrap{max-width:760px;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.logo{font-size:25px;font-weight:1000;font-style:italic;color:var(--gold2)}button{border:1px solid var(--gold);border-radius:10px;padding:11px 15px;background:#17130a;color:var(--gold2);font-weight:800;cursor:pointer}.card{margin-top:18px;padding:20px;background:var(--card);border:1px solid #735817;border-radius:16px}h1{font-size:23px;color:var(--gold2);margin:0}p{color:var(--muted)}label{display:block;margin:13px 0 5px;color:#ddd;font-size:13px}input{width:100%;padding:13px;background:#080808;border:1px solid #51421e;border-radius:9px;color:#fff;font:inherit}.save{width:100%;margin-top:16px;background:var(--gold);color:#000}.status{margin-top:12px;color:#9be7a7;min-height:20px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:520px){.grid{grid-template-columns:1fr}}
+</style></head>
+<body><main class="wrap">
+<div class="top"><div class="logo">NOVA ESPORTS</div><button id="logout">LOG OUT</button></div>
+<section class="card"><h1>Player Dashboard</h1><p>Apna Free Fire profile complete karo. Registration aur match features agle development phase mein add honge.</p>
+<form id="profileForm">
+<div class="grid">
+<div><label for="displayName">Full name</label><input id="displayName" maxlength="50" required></div>
+<div><label for="phone">Mobile number</label><input id="phone" readonly></div>
+<div><label for="email">Email</label><input id="email" readonly></div>
+<div><label for="ign">Free Fire IGN</label><input id="ign" maxlength="24" placeholder="In-game name"></div>
+<div><label for="gameUid">Free Fire UID</label><input id="gameUid" inputmode="numeric" maxlength="12" placeholder="8–12 digit UID"></div>
+</div>
+<button class="save" type="submit">SAVE PLAYER PROFILE</button>
+<div class="status" id="status" role="status"></div>
+</form></section>
+</main><script type="module" src="./nova-dashboard.js"></script></body></html>
