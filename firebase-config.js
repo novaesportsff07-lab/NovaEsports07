@@ -3,12 +3,14 @@ import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase
 import {getDatabase} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 import {getAuth} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-const cfg = { // <-- paste YOUR values from Firebase Console > Project settings > Your apps
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT",
-  appId: "YOUR_APP_ID"
+const cfg = {
+  apiKey: "AIzaSyBo0cDCnUiBAwItf2FnAhY89BVcYTvBqdU",
+  authDomain: "nova-esports-scoreboard.firebaseapp.com",
+  databaseURL: "https://nova-esports-scoreboard-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "nova-esports-scoreboard",
+  storageBucket: "nova-esports-scoreboard.firebasestorage.app",
+  messagingSenderId: "789480527680",
+  appId: "1:789480527680:web:0daac0fdb8b533b5a0cca5"
 };
 const app = initializeApp(cfg);
 export const db = getDatabase(app), auth = getAuth(app);
