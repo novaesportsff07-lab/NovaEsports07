@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOVA ESPORTS CS Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cs-style.css"></head>
+<body class="admin">
+<section id="login"><form id="lf" class="card"><div class="logo">★ NOVA <em>ESPORTS</em></div><h2>CS ADMIN LOGIN</h2>
+ <input id="em" type="email" placeholder="Admin email" required><input id="pw" type="password" placeholder="Password" required>
+ <button>SIGN IN</button><p id="err"></p></form></section>
+<section id="app" hidden>
+ <header><div class="logo">★ NOVA <em>ESPORTS</em></div><span id="conn" class="pill off">OFFLINE</span><button id="out" class="ghost">LOG OUT</button></header>
+ <h2>CLASH SQUAD • LIVE CONTROL</h2>
+ <div class="board"><div><small id="la">TEAM A</small><b id="scA">0</b></div><div class="mid"><span id="rd">ROUND 1 / 13</span><span>FIRST TO 7</span><span id="md">4V4</span></div><div><small id="lb">TEAM B</small><b id="scB">0</b></div></div>
+ <div id="status"></div>
+ <div class="two"><button id="wa" class="big">TEAM A WINS ROUND</button><button id="wb" class="big gold">TEAM B WINS ROUND</button></div>
+ <div class="two"><button id="undo" class="ghost">UNDO LAST ROUND</button><button id="reset" class="danger">RESET MATCH</button></div>
+ <div id="hist" class="hist"></div>
+ <h3>MATCH SETUP</h3>
+ <div id="setup" class="card2">
+  <label>Event title <input id="title" maxlength="40" placeholder="CLASH SQUAD"></label>
+  <label>Match mode <select id="mode"><option value="1v1">1v1</option><option value="2v2">2v2</option><option value="4v4" selected>4v4</option></select></label>
+  <div class="teams">
+   <div><label>Team A name <input id="nA" maxlength="24" placeholder="TEAM A"></label><div id="pA"></div></div>
+   <div><label>Team B name <input id="nB" maxlength="24" placeholder="TEAM B"></label><div id="pB"></div></div>
+  </div>
+  <div class="two"><button id="save">SAVE SETUP</button><button id="sample" class="ghost">FILL TEST NAMES</button></div>
+ </div>
+</section>
+<script type="module" src="cs-admin.js"></script></body></html>
