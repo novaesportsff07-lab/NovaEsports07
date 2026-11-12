@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOVA ESPORTS Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body class="admin">
+<section id="login"><form id="lf" class="card"><div class="logo">★ NOVA <em>ESPORTS</em></div><h2>ADMIN LOGIN</h2>
+ <input id="em" type="email" placeholder="Admin email" required><input id="pw" type="password" placeholder="Password" required>
+ <button>SIGN IN</button><p id="err"></p></form></section>
+<section id="app" hidden>
+ <header><div class="logo">★ NOVA <em>ESPORTS</em></div><span id="conn" class="pill off">OFFLINE</span>
+  <input id="q" placeholder="Search players…"><button id="out" class="ghost">LOG OUT</button></header>
+ <nav><button data-t="match" class="on">MATCH RESULTS</button><button data-t="standings">STANDINGS</button><button data-t="players">PLAYERS</button><button data-t="settings">SCORING & EVENT</button></nav>
+ <div id="tab-match" class="tab"><div class="bar"><select id="msel"></select><button id="madd" class="ghost">+ ADD MATCH</button><button id="mlive" class="ghost">SET AS LIVE MATCH</button><button id="msave">SAVE MATCH</button></div><div id="mbody"></div></div>
+ <div id="tab-standings" class="tab" hidden><table><thead><tr><th>#</th><th>Player</th><th>Kills</th><th>Kill pts</th><th>Place pts</th><th>Total</th></tr></thead><tbody id="sbody"></tbody></table></div>
+ <div id="tab-players" class="tab" hidden><div class="bar"><button id="psave">SAVE PLAYER NAMES</button></div><div id="pbody" class="grid"></div></div>
+ <div id="tab-settings" class="tab" hidden>
+  <div class="bar"><label>Title <input id="stitle"></label><label>Points per kill <input id="skp" type="number" step="any"></label></div>
+  <h3>Placement points (rank 1–48)</h3><div id="ppbody" class="grid"></div>
+  <div class="bar"><button id="ssave">SAVE SETTINGS</button><button id="sample" class="ghost">LOAD TEST DATA</button><button id="reset" class="danger">RESET SCORES</button></div></div>
+</section>
+<script type="module" src="admin.js"></script></body></html>
