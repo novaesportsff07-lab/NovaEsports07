@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOVA ESPORTS CS 2v2 Registration</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cs-2v2.css"></head>
+<body><main>
+ <div class="logo">★ NOVA <em>ESPORTS</em></div>
+ <h1>CS 2v2 REGISTRATION</h1>
+ <p class="mu">Clash Squad • 2v2 • Apni team ki details bharo.</p>
+ <form id="f" class="card" novalidate autocomplete="off">
+  <label>Team Name <input id="team" maxlength="30" placeholder="Team ka naam"></label>
+  <div class="pair">
+   <div class="pl"><h2>PLAYER 1</h2>
+    <label>IGN (in-game name) <input id="p1ign" maxlength="24"></label>
+    <label>Free Fire UID <input id="p1uid" inputmode="numeric" maxlength="12"></label></div>
+   <div class="pl"><h2>PLAYER 2</h2>
+    <label>IGN (in-game name) <input id="p2ign" maxlength="24"></label>
+    <label>Free Fire UID <input id="p2uid" inputmode="numeric" maxlength="12"></label></div>
+  </div>
+  <div id="msg" role="alert"></div>
+  <button id="go">REGISTER TEAM</button>
+ </form>
+ <section id="ok" class="card ok" hidden>
+  <h2>REGISTRATION SAVE HO GAYI ✔</h2>
+  <div class="det" id="det"></div>
+  <div class="note">Ab neeche dono admins ko WhatsApp par details bhejo. Button dabane se WhatsApp khulega aur message pehle se likha hoga. <b>Jab tak aap WhatsApp mein Send nahi dabate, admin ko message nahi gaya hai.</b></div>
+  <a id="w1" class="btn wa" target="_blank" rel="noopener">SEND TO ADMIN 1</a>
+  <a id="w2" class="btn wa" target="_blank" rel="noopener">SEND TO ADMIN 2</a>
+  <button id="copy" class="ghost" type="button">COPY DETAILS</button>
+ </section>
+</main>
+<script type="module" src="cs-2v2.js"></script></body></html>

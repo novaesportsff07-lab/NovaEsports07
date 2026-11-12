@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOVA ESPORTS CS 2v2 Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cs-2v2.css"></head>
+<body>
+<main id="login"><form id="lf" class="card login"><div class="logo">★ NOVA <em>ESPORTS</em></div><h2>2v2 ADMIN LOGIN</h2>
+ <input id="em" type="email" placeholder="Admin email" required><input id="pw" type="password" placeholder="Password" required>
+ <button>SIGN IN</button><p id="err"></p></form></main>
+<main id="app" class="wide" hidden>
+ <div class="bar"><div class="logo">★ NOVA <em>ESPORTS</em></div><span id="conn" class="pill off">OFFLINE</span><button id="out" class="ghost">LOG OUT</button></div>
+ <h1>CS 2v2 • REGISTRATIONS <span id="count"></span></h1>
+ <div class="bar"><input id="q" placeholder="Search team, IGN or UID…"><button id="csv" class="ghost">DOWNLOAD CSV</button></div>
+ <div id="list" class="list"></div>
+ <p id="empty" class="mu" hidden>Abhi koi registration nahi hai.</p>
+</main>
+<script type="module" src="cs-2v2-admin.js"></script></body></html>
